@@ -1,0 +1,26 @@
+{
+  "name": "joi-browserify",
+  "version": "0.0.2",
+  "homepage": "https://github.com/fhemberger/joi-browserify",
+  "authors": [
+    "Frederic Hemberger (http://frederic-hemberger.de/)"
+  ],
+  "description": "Shim to use Joi in the browser with Browserify",
+  "main": "joi-browserify.min.js",
+  "moduleType": [
+    "amd",
+    "globals"
+  ],
+  "keywords": [
+    "Browserify",
+    "joi"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
