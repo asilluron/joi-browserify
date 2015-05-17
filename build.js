@@ -13,18 +13,19 @@ var aliasify   = require('aliasify').configure({
 });
 
 var output = fs.createWriteStream('joi-browserify.min.js', { encoding: 'utf8' });
+
 var b = new browserify({
 	standalone: 'joi',
-	debug: true
+	debug: false
 });
 
 b.add('./node_modules/joi/index.js');
 b.transform(aliasify);
+b.transform({
+  global: true
+}, 'uglifyify')
 b.ignore('path');     // Is not used by Joi
 b.ignore('./binary'); // Doesn't work in the client
-// FIXME: minifyify throws unhandled error event
-// b.plugin('minifyify', {
-// 	output: 'joi-browserify.map.js',
-// 	map: 'joi-browserify.map.js'
-// });
+
+
 b.bundle().pipe(output);

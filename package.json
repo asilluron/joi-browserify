@@ -9,9 +9,9 @@
     "postinstall": "npm run build"
   },
   "keywords": [
-      "joi",
-      "browserify"
-    ],
+    "joi",
+    "browserify"
+  ],
   "author": "Frederic Hemberger (http://frederic-hemberger.de/)",
   "repository": {
     "type": "git",
@@ -22,10 +22,10 @@
     "aliasify": "^1.4.0",
     "browserify": "^5.9.1",
     "joi": "6.1.0",
-    "minifyify": "^4.0.3"
+    "uglifyify": "^3.0.1"
   },
   "devDependencies": {
     "code": "1.x.x",
-    "lab": "5.x.x"
+    "lab": "5.x.x",
   }
 }
