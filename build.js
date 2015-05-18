@@ -15,7 +15,7 @@ var aliasify   = require('aliasify').configure({
 var output = fs.createWriteStream('joi-browserify.min.js', { encoding: 'utf8' });
 
 var b = new browserify({
-	standalone: 'joi',
+	standalone: 'Joi',
 	debug: false
 });
 
